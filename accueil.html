@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head" id="head">
+        <nav>
+            <div class="flexBetween">
+                <div><img src="img/log.png" alt="logo shop" width="120px" height="50px"></div>
+                <div class=" sizeLine flexAround">
+                    <div><a class="colorLine1 decorationNone" href="accueil.html">Accueil</a></div>
+                    <div><a  class="colorLine2 decorationNone" href="Commande.html">Commande</a></div>
+                    <div><a  class="colorLine1 decorationNone" href="Contact.html">Contact</a></div>
+                    <div><a  class="colorLine1 decorationNone" href="panier.html">Panier</a></div>
+                    <div><a  class="colorLine1 decorationNone" href="Apropos.html">A propos</a></div>
+                    <div><a  class="colorLine1 decorationNone" href="play.html">playmusic</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="modèle" id="modèle">
+        <div class="row">
+            <div class="col51">
+                <h1 class="titre"><span>w</span>elcom to you</h1><br><br>
+                <p>Voici quelques modèles de nos produits </p>
+            </div>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="i.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h2>150DT</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="g.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h2>100DT</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="b.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2>80DT</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="f.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h2>80DT</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="g.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h2>100DT</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="e.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h2>100DT</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="j.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2>150DT</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="l.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h2>150DT</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="c.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2>100DT</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="arrierePlan">
+     <H1>PLAYMUSIC</H1>
+        <div class="navbar">
+            <img src="logok.png" class="logo">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">playlist</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </div>
+        <div class="contenus">
+            <div class="col-gauche">
+                <h1>My<br>playlist<br>Quotidient</h1>
+            </div>
+            <div class="col-droite">
+                <p>jouer la musique</p>
+                <img src="play.png" alt="" id="btnplay">
+            </div>
+        </div>
+    </div>
+   <audio id="MaMusique">
+         <source src="ka.mp3" type="audio/mp3" >
+   </audio>
+   <Script>
+     var MaMusique = document.getElementById("MaMusique")
+     var btnplay = document.getElementById("btnplay")
+    
+     btnplay.onclick = function(){
+        if(MaMusique.paused){
+            MaMusique.play();
+            btnplay.src ="pause.png"
+        }else{
+            MaMusique.pause();
+            btnplay.src ="play.png"
+        }
+    }  
+   </Script>
+</body>
+</html>

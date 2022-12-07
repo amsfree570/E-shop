@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.arrierePlan{
+    height: 130vh;
+    width: 100%;
+    background-image:url(casque.jpg) ;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    width: 88%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+.navbar ul li{
+   list-style: none;
+   display: inline-block;
+   margin: 0 15px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+}
+.contenus{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.col-gauche{
+    margin-left: 6%;
+}
+.col-gauche h1{
+    font-size: 90px;
+    color: aliceblue;
+    line-height: 110px;
+    float: left;
+}
+.col-droite{
+    float: right;
+    margin: 6%;
+    max-width: 100px;
+    display: flex;
+    align-items: center; 
+}
+.col-droite p{
+    color: aliceblue;
+    font-weight: 500;
+    margin: 15px;
+
+}
+#btnplay{
+  width: 80px;
+  cursor: pointer;
+  
+}
