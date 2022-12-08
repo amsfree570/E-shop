@@ -42,23 +42,19 @@
             </div>
         </div>
     </div>
-   <audio id="MaMusique">
-         <source src="ka.mp3" type="audio/mp3" >
-   </audio>
-   <script>
-     var MaMusique = document.getElementById("MaMusique")
-     var btnplay = document.getElementById("btnplay")
-    
-     btnplay.onclick = function(){
-        if(MaMusique.paused){
-            MaMusique.play();
-            btnplay.src ="pause.png"
-        }else{
-            MaMusique.pause();
-            btnplay.src ="play.png"
-        }
-        
-     }
-   </script>
+    <Script>
+        var MaMusique = document.getElementById("MaMusique")
+        var btnplay = document.getElementById("btnplay")
+       
+        btnplay.onclick = function(){
+           if(MaMusique.paused){
+               MaMusique.play();
+               btnplay.src ="pause.png"
+           }else{
+               MaMusique.pause();
+               btnplay.src ="play.png"
+           }
+       }  
+      </Script>
 </body>
 </html>
